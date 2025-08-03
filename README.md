@@ -1,8 +1,9 @@
 # SmalltalkRS - Complete Smalltalk Implementation in Rust
 
-[![Coverage](https://img.shields.io/badge/coverage-93.9%25-brightgreen.svg)](coverage/tarpaulin-report.html)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
-[![Tests](https://img.shields.io/badge/tests-20%20passing-brightgreen.svg)](#)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
+[![Tests](https://img.shields.io/badge/tests-20%20passing-brightgreen)](#)
+[![Coverage](https://img.shields.io/badge/coverage-93.9%25-brightgreen)](#)
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An in-progress implementation of the Smalltalk programming language with a visual programming environment, written in Rust.
