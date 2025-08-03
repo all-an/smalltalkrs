@@ -3,8 +3,9 @@
 [![Coverage](https://img.shields.io/badge/coverage-93.9%25-brightgreen.svg)](coverage/tarpaulin-report.html)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
 [![Tests](https://img.shields.io/badge/tests-20%20passing-brightgreen.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A complete implementation of the Smalltalk programming language with visual programming environment, written in Rust.
+An in-progress implementation of the Smalltalk programming language with a visual programming environment, written in Rust.
 
 ## Overview
 
@@ -16,6 +17,49 @@ This project aims to create a fully-featured Smalltalk implementation that inclu
 - Complete class hierarchy and method lookup system
 - Smalltalk-to-Rust transpilation capabilities
 - Integration with Rust ecosystem libraries
+
+## Current Implementation Status
+
+### ✅ Completed Features
+
+#### Core Object System
+- **ObjectId System**: Unique identifiers for every object instance
+  - Thread-safe atomic counter generation
+  - Hash and equality implementations
+  - Display formatting (`#123`)
+- **SmalltalkObject Trait**: Base trait for all Smalltalk objects
+  - Object identity (`is_identical`) vs equality (`equals`) semantics
+  - String representation (`to_smalltalk_string`)
+  - Type-safe downcasting (`as_any`)
+  - Complete documentation and examples
+
+#### SmallInteger Implementation
+- **Integer Objects**: Immutable integer values with full object semantics
+  - Creation with `SmallInteger::new(value)`
+  - Value access with `value()` method
+  - Arithmetic operations: `add()`, `subtract()`
+  - Comparison operations: `less_than()`
+  - Object equality based on value comparison
+  - String representation for debugging
+
+#### Testing Infrastructure
+- **Comprehensive Test Suite**: 20 tests covering all implemented features
+  - Object identity and equality semantics
+  - Type safety and downcasting
+  - Arithmetic operations and immutability
+  - Edge cases and error conditions
+- **93.9% Test Coverage**: Near-complete coverage with tarpaulin
+  - Coverage reporting with HTML and JSON output
+  - Automated badge generation
+  - TDD development workflow
+
+### 🚧 In Development
+- Message passing foundation
+- Boolean objects (True/False)
+- Nil object implementation
+
+### 📋 Planned Features
+See the [Implementation Roadmap](#implementation-roadmap) below for the complete 24-month development plan.
 
 ## Running Tests and Coverage
 
@@ -422,4 +466,4 @@ This implementation follows the Smalltalk-80 specification as documented in the 
 
 ## License
 
-[License to be determined]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

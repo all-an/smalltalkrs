@@ -2,5 +2,13 @@
 name = "smalltalkrs"
 version = "0.1.0"
 edition = "2024"
+authors = ["SmalltalkRS Project"]
+license = "MIT"
+description = "A complete Smalltalk implementation with visual programming environment, written in Rust"
+repository = "https://github.com/your-username/smalltalkrs"
+homepage = "https://github.com/your-username/smalltalkrs"
+readme = "README.md"
+keywords = ["smalltalk", "programming-language", "visual-programming", "vm", "interpreter"]
+categories = ["development-tools", "programming-languages"]
 
 [dependencies]
