@@ -5,6 +5,8 @@
 
 pub mod object;
 pub mod small_integer;
+pub mod boolean;
 
 pub use object::*;
 pub use small_integer::*;
+pub use boolean::*;

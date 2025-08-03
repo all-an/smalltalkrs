@@ -1,9 +1,9 @@
 {
-  "generated_at": "2025-08-03T10:40:11-03:00",
+  "generated_at": "2025-08-03T11:29:39-03:00",
   "badges": {
     "version": "https://img.shields.io/badge/version-v0.1.0-blue",
     "build": "https://img.shields.io/badge/build-passing-brightgreen",
-    "tests": "https://img.shields.io/badge/tests-20%20passing-brightgreen",
-    "coverage": "https://img.shields.io/badge/coverage-93.9%25-brightgreen"
+    "tests": "https://img.shields.io/badge/tests-38%20passing-brightgreen",
+    "coverage": "https://img.shields.io/badge/coverage-97.3%25-brightgreen"
   }
 }

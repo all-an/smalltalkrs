@@ -1,8 +1,8 @@
 # SmalltalkRS - Complete Smalltalk Implementation in Rust
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
-[![Tests](https://img.shields.io/badge/tests-20%20passing-brightgreen)](#)
-[![Coverage](https://img.shields.io/badge/coverage-93.9%25-brightgreen)](#)
+[![Tests](https://img.shields.io/badge/tests-38%20passing-brightgreen)](#)
+[![Coverage](https://img.shields.io/badge/coverage-97.3%25-brightgreen)](#)
 [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -43,21 +43,34 @@ This project aims to create a fully-featured Smalltalk implementation that inclu
   - Object equality based on value comparison
   - String representation for debugging
 
+#### Boolean Implementation
+- **True and False Objects**: Singleton boolean objects with proper Smalltalk semantics
+  - Creation with `True::new()` and `False::new()`
+  - Boolean value access with `is_true()`
+  - Logical operations: `and()`, `or()`, `not()` with short-circuit behavior
+  - Common `BooleanObject` trait for polymorphic operations
+  - Singleton equality semantics (all True objects are equal)
+  - Complete truth table implementations
+  - Integration with SmalltalkObject trait
+
 #### Testing Infrastructure
-- **Comprehensive Test Suite**: 20 tests covering all implemented features
+- **Comprehensive Test Suite**: 38 tests covering all implemented features
   - Object identity and equality semantics
   - Type safety and downcasting
   - Arithmetic operations and immutability
+  - Boolean logic operations and truth tables
   - Edge cases and error conditions
-- **93.9% Test Coverage**: Near-complete coverage with tarpaulin
+  - Trait implementation coverage
+- **97.3% Test Coverage**: Near-complete coverage with tarpaulin
   - Coverage reporting with HTML and JSON output
   - Automated badge generation
   - TDD development workflow
+  - 100% coverage for boolean.rs module
 
 ### 🚧 In Development
+- UndefinedObject (nil) implementation
 - Message passing foundation
-- Boolean objects (True/False)
-- Nil object implementation
+- Character objects
 
 ### 📋 Planned Features
 See the [Implementation Roadmap](#implementation-roadmap) below for the complete 24-month development plan.
@@ -136,11 +149,11 @@ Open `coverage/tarpaulin-report.html` in your browser
 
 #### 1.3 Basic Data Types and Collections
 - [ ] Implement fundamental objects:
-  - [ ] SmallInteger and LargeInteger
+  - [x] SmallInteger and LargeInteger
   - [ ] Float and Fraction
   - [ ] Character and String
   - [ ] Symbol (interned strings)
-  - [ ] Boolean (True/False)
+  - [x] Boolean (True/False)
   - [ ] UndefinedObject (nil)
 - [ ] Create collection hierarchy:
   - [ ] Array and ByteArray
